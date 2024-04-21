@@ -16,6 +16,7 @@ export default function Home() {
       </Head>
       <main className={`${styles.main} ${inter.className}`}>
         <h1> My Home Page </h1>
+        <section>Body Section</section>
       </main>
     </>
   );
