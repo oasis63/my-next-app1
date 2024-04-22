@@ -45,7 +45,7 @@ pipeline {
             steps {
                 // Pull the latest Docker image from the registry
                 script {
-                    docker.image('my-nextjs-app:v1').pull()
+                    docker.image('my-nextjs-app:v${BUILD_NUMBER}').pull()
                 }
                 // Deploy the latest Docker image
                 // Add deployment steps here
